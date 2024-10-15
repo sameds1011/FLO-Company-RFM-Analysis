@@ -1,0 +1,57 @@
+ RFM analizi için müşterilerin alışveriş davranışlarına ilişkin veri seti kullanıldı. Verideki temel değişkenler şunlardır:
+
+CustomerID: Müşteri kimliği
+InvoiceDate: Satın alma tarihi
+InvoiceNo: Fatura numarası
+Quantity: Satın alınan ürün sayısı
+UnitPrice: Ürün başına birim fiyat
+Veri temizliği yapılarak eksik ve hatalı veri noktaları çıkarıldı. Daha sonra, her müşteri için Recency (son alışveriş), Frequency (toplam alışveriş sayısı) ve Monetary (toplam harcama) değerleri hesaplandı.
+
+RFM Skorlarının Hesaplanması: RFM analizi, her müşteri için üç temel metriği hesaplayarak başladı:
+
+Recency: Müşterinin son alışveriş yaptığı tarihten bu yana geçen gün sayısı.
+Frequency: Müşterinin toplam alışveriş sayısı.
+Monetary: Müşterinin yaptığı toplam harcama
+
+
+Her bir metrik, veri setindeki diğer müşterilere kıyasla 1 ila 5 arasında puanlandı (1 en düşük, 5 en yüksek). Bu puanlar birleştirilerek her müşteri için bir RF Skoru oluşturuldu.
+
+
+Segmentasyon
+Müşterileri segmente etmek amacıyla, oluşturduğumuz RF skorlarına göre bir haritalama gerçekleştirildi. Aşağıdaki segmentler belirlendi:
+
+Champions (Şampiyonlar): RF skorları yüksek olan müşterilerdir (5-5). Bu grup, sık alışveriş yapan ve yüksek harcama yapan sadık müşterileri içerir. Şirket için en değerli müşteri grubudur.
+
+Potential Loyalists (Potansiyel Sadıklar): Orta seviyede alışveriş yapan ve harcama yapan müşterilerdir. Bu müşteriler gelecekte sadık birer müşteri olma potansiyeline sahiptir.
+
+New Customers (Yeni Müşteriler): Son zamanlarda alışveriş yapmış olan ancak henüz sık alışveriş yapmamış müşterilerdir. Bu müşterilere yönelik müşteri ilişkileri geliştirme stratejileri uygulanabilir.
+
+Hibernating (Uyuyanlar): Uzun süredir alışveriş yapmayan ve düşük harcamaları olan müşterilerdir. Bu müşterileri yeniden aktive etmek için özel kampanyalar düzenlenebilir.
+
+At Risk (Risk Altındaki Müşteriler): Daha önce yüksek harcama yapmış ancak uzun süredir alışveriş yapmamış müşterilerdir. Bu grubu kaybetmemek için hızlı aksiyonlar alınabilir.
+
+Can’t Lose (Kaybedilemeyecek Müşteriler): Çok yüksek harcamalar yapmış ancak son zamanlarda alışveriş yapmayan müşterilerdir. Bu müşterileri geri kazanmak kritik öneme sahiptir.
+
+Elde Edilen Sonuçlar
+Yapılan RFM segmentasyonunda elde edilen önemli bulgular:
+
+Şampiyon Müşteriler: Bu segmentteki müşteriler en değerli müşteri grubunu oluşturuyor. Şirketin bu gruba yönelik sadakat programları sunması, onları elde tutmaya ve daha fazla alışveriş yapmalarını sağlamaya yönelik stratejiler geliştirmesi önerilir.
+
+Risk Altındaki Müşteriler: Bu segment, yakın zamanda alışveriş yapmamış ancak geçmişte yüksek harcama yapmış müşterilerden oluşuyor. Bu gruba yönelik özel geri kazanım kampanyaları düzenlenmeli, kişiselleştirilmiş teklifler sunulmalıdır.
+
+Yeni Müşteriler: Henüz bağlılık göstermemiş bu müşteri grubu, potansiyel müşteri kazanımına yönelik stratejiler ile sadık müşteri haline getirilebilir.
+
+Uyuyan Müşteriler: Bu grup, düşük harcama yapmış ve uzun süredir alışveriş yapmamış müşterileri temsil ediyor. Yeniden pazarlama kampanyaları ile bu müşterilerin tekrar aktif hale getirilmesi için teşvik edici teklifler sunulmalıdır.
+
+ Öneriler
+RFM analizine dayalı olarak geliştirilebilecek stratejiler:
+
+Şampiyon müşterilere özel ödüller ve avantajlar sağlamak: Sadık müşteriler teşvik edilmeli ve onları elde tutmak için VIP programlar veya indirimler sunulabilir.
+
+Risk altındaki müşterilere yönelik geri kazanım kampanyaları: Bu müşterileri yeniden alışveriş yapmaya ikna edecek özel promosyonlar ve kişiselleştirilmiş teklifler sunulabilir.
+
+Yeni müşterilerle iletişim kurulmalı: Henüz şirketle fazla alışveriş yapmamış bu müşterilere yönelik etkili iletişim ve tanıtım stratejileri geliştirilebilir.
+
+Uyuyan müşterileri yeniden aktive etmek: Bu segmentteki müşterilere indirimler, geri kazanım kampanyaları ve özel teklifler sunularak şirketle yeniden etkileşime geçmeleri sağlanabilir.
+SONUÇLAR
+ Müşteri segmentasyonu yaparak, her bir segmentin ihtiyaçlarına yönelik özelleştirilmiş pazarlama stratejileri geliştirmek, müşteri memnuniyetini artırmanın ve işletme karlılığını yükseltmenin etkili bir yoludur. Bu analiz sayesinde, müşteri bağlılığını artıracak adımlar atılabilir ve risk altındaki müşterileri kaybetmek önlenebilir.
